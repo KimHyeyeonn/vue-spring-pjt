@@ -42,4 +42,5 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-spring-pjt:latest
+        # DOKER BUILD -T KIMHYEYEON2/IMAGE/TAGS
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/springapp:${{github.sha}}
